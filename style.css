@@ -1,0 +1,113 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: rgb(2, 2, 12);
+}
+ .header {
+  height: 200px;
+  background-image: linear-gradient(rgba(60, 60, 90, 0.63), rgba(44, 52, 87, 0.418)),url(covid.jpg);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .header h1 {
+  font-size: 50px;
+}
+/* .container .text-header {
+  color: #fff;
+} */
+.main-info {
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+align-items: center;
+}
+.main-info .card {
+  background-color: rgb(23, 22, 53);
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+}
+i {
+  font-size: 60px;
+  color: #fff;
+}
+.main-info .card p {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.main-input {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  
+}
+.main-input input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 22px;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+}
+#icon {
+  font-size: 35px;
+  background-color: red;
+  color: #fff;
+  padding: 5px;
+  border-radius: 0 10px 10px 0;
+}
+@media screen and (max-width:1160px) {
+  .main-info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width:800px) {
+  .main-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 50px;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 600px;
+  }
+  .main-input input {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    width: 150px;
+  }
+  #icon {
+    font-size: 25px;
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+  }
+  .card {
+    /* gap: 30px; */
+    margin-top: 30px;
+  }
+  /* .main-info .card {
+    background-color: rgba(40, 34, 208, 0.466);
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+  } */
+}
